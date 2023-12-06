@@ -54,7 +54,7 @@ async function getCategories(numberCategories) {
 async function getCategoriesFromResponse() {
     //Send a GET request to jService API and return an array of 100 random category objects in the response.
     const categoryOffset = Math.floor(Math.random() * 10000); //Offset ensures random categories are returned each time.
-    const res = await axios.get('http://jservice.io/api/categories', {params: {count: 100, offset: categoryOffset}});
+    const res = await axios.get('https://jservice.io/api/categories', {params: {count: 100, offset: categoryOffset}});
     return res.data;
 }
 
@@ -87,7 +87,7 @@ async function getCluesForCategories(arrayOfCategories) {
 async function getCluesFromResponse(categoryId) {
     //Makes a GET request to the jservice API to return an array of clues for the specific category id.
     //Each clue object contains information such as the question and the answer for the clue.
-    const res = await axios.get('http://jservice.io/api/clues', {params: {category: categoryId}});
+    const res = await axios.get('https://jservice.io/api/clues', {params: {category: categoryId}});
     return res.data;
 }
 
