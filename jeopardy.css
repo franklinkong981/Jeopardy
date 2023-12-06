@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url("jeopardy_logo.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: Copse, Arial, Helvetica, 'Times New Roman', sans-serif;
+}
+
+#jeopardy-board {
+    background-color: white;
+    margin: 5px auto;
+}
+
+#jeopardy-board-head tr th, #jeopardy-board-body tr td {
+    width: 15vw;
+    height: 14vh;
+    color: white;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+#jeopardy-board-body tr td {
+    cursor: pointer;
+}
+
+#new-game-button {
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
